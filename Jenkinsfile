@@ -9,7 +9,7 @@ pipeline {
 	stages {
 		stage('pull request'){
 			steps {
-				sshagent(credential: ['credential']) {
+				sshagent([credential]) {
 					sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
 					docker compose down ${service}
 					cd ${directory}
@@ -22,7 +22,7 @@ pipeline {
 
                 stage('building'){
                         steps {
-                                sshagent(credential: ['credential']) {
+                                sshagent( [credential]) {
                                         sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
                                         docker compose down ${service}
                                         exit
@@ -33,7 +33,7 @@ pipeline {
 
                 stage('deploy'){
                         steps {
-                                sshagent(credential: ['credential']) {
+                                sshagent([credential]) {
                                         sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
                                         docker compose up -d ${service}
                                         exit
