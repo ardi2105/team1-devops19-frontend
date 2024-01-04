@@ -48,7 +48,7 @@ pipeline {
 				discordSend description: 'Testing Frontend', 
 				footer: 'Frontend-Deploy', 
 				image: '', 
-				link: 'https://jenkins.team1.studentdumbways.my.id/job/wayshub-chill/job/staging/', 
+				link: 'env.BUILD_URL', 
 				result: '', scmWebUrl: '', 
 				thumbnail: '', 
 				title: 'Frontend', 
