@@ -41,5 +41,13 @@ pipeline {
                                 }
                 }
 }
+
+                stage('test'){
+                        steps {
+				echo "Test To Discord"
+				discordSend description: '', footer: '', image: '', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'Frontend', webhookURL: 'https://discord.com/api/webhooks/1192247473805197374/vqEg_eqP--CwJes-jdVXSvIIvW96JmfuacWILoFNnQVQJonzOio1okr6Q6PMdBqW1k4H'				
+                                }
+                }
+}
 }
 }
