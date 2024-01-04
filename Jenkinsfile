@@ -48,11 +48,12 @@ pipeline {
 				discordSend description: 'Testing Frontend', 
 				footer: 'Frontend-Deploy', 
 				image: '', 
-				link: '${BUILD_URL}', 
-				result: '', scmWebUrl: '', 
+				link: ${BUILD_URL}, 
+				result: '', 
+				scmWebUrl: '', 
 				thumbnail: '', 
 				title: 'Frontend', 
-				webhookURL: 'https://discord.com/api/webhooks/1192247473805197374/vqEg_eqP--CwJes-jdVXSvIIvW96JmfuacWILoFNnQVQJonzOio1okr6Q6PMdBqW1k4H'
+				webhookURL: 'https://discord.com/api/webhooks/1192368582273794128/9IM58FV5MLUCJWQtr1dhnmFWC2hJyiwRlJwM7n-vvqxGRtfzlj6N5vZIQCf7TLScOIJj'
                                 }
                 }
 }
