@@ -45,7 +45,14 @@ pipeline {
                 stage('test'){
                         steps {
 				echo "Test To Discord"
-				discordSend description: '', footer: '', image: '', link: '', result: '', scmWebUrl: '', thumbnail: '', title: 'Frontend', webhookURL: 'https://discord.com/api/webhooks/1192247473805197374/vqEg_eqP--CwJes-jdVXSvIIvW96JmfuacWILoFNnQVQJonzOio1okr6Q6PMdBqW1k4H'				
+				discordSend description: 'Testing Frontend', 
+				footer: 'Frontend-Deploy', 
+				image: '', 
+				link: 'https://jenkins.team1.studentdumbways.my.id/job/wayshub-chill/job/staging/', 
+				result: '', scmWebUrl: '', 
+				thumbnail: '', 
+				title: 'Frontend', 
+				webhookURL: 'https://discord.com/api/webhooks/1192247473805197374/vqEg_eqP--CwJes-jdVXSvIIvW96JmfuacWILoFNnQVQJonzOio1okr6Q6PMdBqW1k4H'
                                 }
                 }
 }
