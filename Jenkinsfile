@@ -48,7 +48,7 @@ pipeline {
 				discordSend description: 'Testing Frontend', 
 				footer: 'Frontend-Deploy', 
 				image: '', 
-				link: '', 
+				link: '${BUILD_URL}', 
 				result: '', scmWebUrl: '', 
 				thumbnail: '', 
 				title: 'Frontend', 
