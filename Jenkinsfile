@@ -8,7 +8,7 @@ pipeline {
 	agent any
 	stages {
 
-                stage('test'){
+                stage('send notif'){
                         steps {
 				echo "Test To Discord"
 				discordSend description: 'Testing Frontend', 
