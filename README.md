@@ -1,5 +1,5 @@
 Testing CI/CD
-Testing Pushing GITHUB
+Pushing GITHUB
 
 # Getting Started with Create React App
 
